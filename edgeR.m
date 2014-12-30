@@ -1,0 +1,98 @@
+function p3= edgeR(p1,p2,m)
+n=size(p1,2);
+for i=1:n
+    k=1;
+    pos1=find(p1==i);
+    pos2=find(p2==i);
+    if(pos1==n)
+        a1=p1(1);
+    else
+        a1=p1(pos1+1);
+    end
+    if(pos1==1)
+        a2=p1(n);
+    else
+        a2=p1(pos1-1);
+    end
+    if(pos2==n)
+        b1=p2(1);
+    else
+        b1=p2(pos2+1);
+    end
+    if(pos2==1)
+        b2=p2(n);
+    else
+        b2=p2(pos2-1);
+    end
+    if((a1==b1)&(a2==b2)|(a1==b2)&(a2==b1))
+        et{i}=[-a1 -a2];
+    else
+        if(a1==b1|a1==b2)
+            k=1;
+            a(k)=-a1;k=k+1;
+            a(k)=a2;k=k+1;
+            if(a1==b1)
+                a(k)=b2;
+            else
+                a(k)=b1;
+            end
+        else
+            if(a2==b1|a2==b2)
+                k=1;
+                a(k)=-a2;k=k+1;
+                a(k)=a1;k=k+1;
+                if(a2==b1)
+                    a(k)=b2;
+                else
+                    a(k)=b1;
+                end
+            else
+                a(1)=a1;
+                a(2)=a2;
+                a(3)=b1;
+                a(4)=b2;
+            end
+        end
+        et{i}=a;
+    end
+    et{i};
+end
+p3=[];
+k=1;
+p3(k)=p1(1);
+k=k+1;
+while(k<=n)
+    current=p3(k-1);
+    cc=abs(p3(k-1));
+    for i=1:n
+        temp=et{i};
+        temp=temp(temp~=current);
+        temp=temp(temp~=-current);
+        et{i}=temp;
+    end
+    if(isempty(et{cc}))
+        r=randperm(6,1);
+        if(isempty(p3==r))
+            p3(k)=r;
+            k=k+1;
+        end
+    else
+        if(isempty(find(et{cc}<0)))
+            temp=et{cc};
+            [val,pos]=min(m(cc,abs(temp)));
+            p3(k)=abs(temp(pos));
+            k=k+1;
+        else
+            temp=et{cc};
+            pos=find(temp<0);
+            p3(k)=abs(temp(pos(1)));
+            k=k+1;
+        end
+    end
+end
+p1;
+p2;
+p3;
+
+        
+        
