@@ -1,4 +1,4 @@
-MTECH-PROJECTS
+DATA SCIENCE TOOLS
 ==============
 
-List Of Projects I did during my masters course at IIST
+Categorical Value Conversion - Using Sets and Unique Values
