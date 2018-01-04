@@ -4,19 +4,14 @@
 Script for converting categorical values in a given dataframe to numerical values 
 """
 
-
 def handle_non_numerical_data(df):
-  
 """
-
 INPUTS
 - df: dataframe with columns having categorical values
 OUTPUTS
 - df: datframe with all categorical columns converted to numerical
 - catData: dictionary of dictionaries containing information on categorical values and their corresponding integer value 
           
-
-
 """
   #class catResult:
       #def __init__(self,cat,df):
@@ -41,7 +36,4 @@ OUTPUTS
 
           df[column] = list(map(convert_to_int, df[column]))
           catData[column]= text_digit_vals
-
-        
-
   return df,catData
