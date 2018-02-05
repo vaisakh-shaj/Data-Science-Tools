@@ -1,7 +1,7 @@
 A set of tools that can come handy to Data Scientists
 ===============================================
 
-[![DOI](https://www.linkedin.com/in/vaisakh-shaj-80ba9b49/)]
+[Contact](https://www.linkedin.com/in/vaisakh-shaj-80ba9b49/)
 
 ## Table of Contents
 
@@ -12,10 +12,7 @@ A set of tools that can come handy to Data Scientists
 5. [Future Work](#future-work)
 6. [Citation](#citation)
 
-This repo contains [adversarial image](https://arxiv.org/abs/1312.6199) crafting algorithms implemented in
-**pure** Tensorflow.  The algorithms can be found in [attacks](attacks) folder.  The
-implementation adheres to the principle **tensor-in, tensor-out**.  They all
-return a Tensorflow operation which could be run through `sess.run(...)`.
+
 
 ## Functionalities
 
