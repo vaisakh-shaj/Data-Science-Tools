@@ -33,7 +33,7 @@ A set of tools that can come handy to Data Scientists
   ```python
     from CNBS import makeData
     cl=makeData(D,ratio)
-                D has the format [(numpy1,label1),(numpy2,label2),(numpy3,label3)]
+                #D has the format [(numpy1,label1),(numpy2,label2),(numpy3,label3)]
   ```
 
 
