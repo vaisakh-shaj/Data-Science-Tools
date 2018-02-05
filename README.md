@@ -7,10 +7,10 @@ A set of tools that can come handy to Data Scientists
 
 1. [Functionalities](#Functionalities)
 2. [Dependencies](#dependencies)
-3. [The `model`](#the-model)
-4. [How to Use](#how-to-use)
-5. [Future Work](#future-work)
-6. [Citation](#citation)
+3. [How to Use](#how-to-use)
+4. [Future Work](#future-work)
+5. [Citation](#Citation)
+
 
 
 
