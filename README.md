@@ -1,7 +1,7 @@
 A set of tools that can come handy to Data Scientists
 ===============================================
 
-[![DOI](https://zenodo.org/badge/77407674.svg)](https://zenodo.org/badge/latestdoi/77407674)
+[![DOI](https://www.linkedin.com/in/vaisakh-shaj-80ba9b49/)]
 
 ## Table of Contents
 
